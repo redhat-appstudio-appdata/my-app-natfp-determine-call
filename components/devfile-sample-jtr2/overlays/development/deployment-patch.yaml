@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-jtr2
+  namespace: amobrem-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:c6ad8357c43a6b732394f069d4bd611886d58a721be81d67dbbad38be9fd4285
+        name: my-nodejs
+        resources: {}
+status: {}
