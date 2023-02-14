@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-jtr2
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:amobrem-tenant-devfile-sample-jtr2
+      - image: quay.io/redhat-appstudio/user-workload@sha256:c6ad8357c43a6b732394f069d4bd611886d58a721be81d67dbbad38be9fd4285
         name: my-nodejs
         ports:
         - containerPort: 3001
